@@ -1,0 +1,193 @@
+:root {
+  --primary-white-color: #ffffff; /**белый цвет фона и текста, логотипа в футере**/
+  --theme-dark-color: #2f303a; /*темно серый цвет фона**/
+  --theme-light-color: #f5f4fa; /**светло серый текст фона**/
+  --accent-color: #2196f3; /**синий цвет выделения ссылок и кнопок при ховере, фокусе**/
+  --text-primary-color: #212121; /**темно серый цвет тектса**/
+  --text-secondary-color: #757575; /**основной светло серый цвет текста**/
+  --text-primary-font: Roboto, sans-serif; /**основшой шрифт текта**/
+  --text-secondary-font: Raleway, sans-serif; /**шрифт текста логотипа**/
+}
+body {
+  font-family: var(--text-primary-font);
+  color: var(--text-primary-color);
+  background-color: var(--primary-white-color);
+}
+
+/* СБРОС ОФОРМЛЕНИЯ ДЛЯ СПИСКОВ И ССЫЛОК */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* НEADER */
+/* LOGO-HEADER + LOGO-FOOTER*/
+.logo {
+  font-family: var(--text-secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo-header {
+  color: #000000;
+}
+.logo-footer {
+  color: var(--primary-white-color);
+}
+
+/*НАВИГАЦИЯ САЙТА И КОНТАКТЫ В ХЕДЕРЕ */
+.nav-item,
+.contact-header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-item {
+  color: var(--text-primary-color);
+}
+.contact-header {
+  color: var(--text-secondary-color);
+}
+.nav-item:focus,
+.nav-item:hover,
+.contact-header:focus,
+.contact-header:hover {
+  color: var(--accent-color);
+}
+.current {
+  color: var(--accent-color);
+}
+
+/* FOTTER */
+.footer {
+  background-color: var(--theme-dark-color);
+}
+address {
+  font-style: normal;
+}
+.address-street,
+.contact-footer {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-street {
+  color: var(--primary-white-color);
+}
+.contact-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact-footer:hover,
+.contact-footer:focus {
+  color: var(--accent-color);
+}
+
+/* MAIN*/
+/* HERO */
+.hero {
+  background-color: var(--theme-dark-color);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
+.hero-button {
+  font-family: var(--text-primary-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #188ce8;
+}
+
+/* ОСОБЕННОСТИ */
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-secondary-color);
+}
+
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ + НАША КОМАНДА */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team {
+  background-color: var(--theme-light-color);
+}
+.team-card {
+  background-color: var(--primary-white-color);
+}
+.team-title,
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-title {
+  font-weight: 500;
+}
+.team-text {
+  color: var(--text-secondary-color);
+}
+
+/*///////////////////////ВТОРАЯ СТРАНИЦА/////////////////////////////  */
+/*ПОРТФОЛИО */
+.portfolio-button {
+  font-family: var(--text-primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--text-primary-color);
+  background-color: var(--theme-light-color);
+}
+.portfolio-button:active,
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-secondary-color);
+}
