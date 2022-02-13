@@ -21,8 +21,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-}
+ outline: 1px solid tomato;}
 
 /* СБРОС ОФОРМЛЕНИЯ ДЛЯ СПИСКОВ И ССЫЛОК; СБРОС PADDING И MARGIN ДЛЯ СПИСКОВ, ТЕКСТА, ЗАГЛАВИЙ*/
 h1,
@@ -86,33 +85,28 @@ img {display: block, max-width: 100%, height: auto;
   align-items: center;
   margin-left: auto;
 }
-
-.nav-item{
+.nav-item:not(:last-child){
   margin-right: 50px;
 }
-.nav-item:last-child{
-  margin-right: 0;
-}
-
-
-
-.nav-item,
-.contact-header {
+.contact-header-item:not(:last-child)
+{ margin-right: 50px;}
+.nav-link,
+.contact-header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.nav-item {
+.nav-link {
   color: var(--text-primary-color);
 }
-.contact-header {
+.contact-header-link {
   color: var(--text-secondary-color);
 }
-.nav-item:focus,
-.nav-item:hover,
-.contact-header:focus,
-.contact-header:hover {
+.nav-link:focus,
+.nav-link:hover,
+.contact-header-link:focus,
+.contact-header-link:hover {
   color: var(--accent-color);
 }
 .current {
@@ -188,6 +182,9 @@ address {
 }
 .features-item {
   flex-basis: calc((100% - 120px) / 4);
+}
+.features-item:not(:last-child){
+  margin-right: 30px;
 }
 
 .features-title {
