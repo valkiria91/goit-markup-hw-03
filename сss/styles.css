@@ -22,7 +22,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  outline: 1px solid red;
 }
 
 /* СБРОС ОФОРМЛЕНИЯ ДЛЯ СПИСКОВ И ССЫЛОК; СБРОС PADDING И MARGIN ДЛЯ СПИСКОВ, ТЕКСТА, ЗАГЛАВИЙ*/
@@ -39,8 +38,7 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
-img {
-  display: block;
+img {display: block, max-width: 100%, height: auto;
 }
 
 .list {
@@ -88,6 +86,15 @@ img {
   align-items: center;
   margin-left: auto;
 }
+
+.nav-item{
+  margin-right: 50px;
+}
+.nav-item:last-child{
+  margin-right: 0;
+}
+
+
 
 .nav-item,
 .contact-header {
