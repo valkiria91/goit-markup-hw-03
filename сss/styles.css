@@ -42,6 +42,14 @@ p {
 }
 
 /* НEADER */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 /* LOGO-HEADER + LOGO-FOOTER*/
 .logo {
   font-family: var(--text-secondary-font);
@@ -50,6 +58,8 @@ p {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
+  margin-right: 93px;
 }
 .logo-header {
   color: #000000;
@@ -59,6 +69,24 @@ p {
 }
 
 /*НАВИГАЦИЯ САЙТА И КОНТАКТЫ В ХЕДЕРЕ */
+.site-nav,
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.contact-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+/* .nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-header:not(:last-child) {
+  margin-right: 50px;
+} */
+
 .nav-item,
 .contact-header {
   font-weight: 500;
