@@ -14,9 +14,28 @@ body {
   background-color: var(--primary-white-color);
 }
 
-/* СБРОС ОФОРМЛЕНИЯ ДЛЯ СПИСКОВ И ССЫЛОК */
+/* ПАРАМЕТРЫ КОНТЕЙНЕРА */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0 15px;
+
+  outline: 1px solid red;
+}
+
+/* СБРОС ОФОРМЛЕНИЯ ДЛЯ СПИСКОВ И ССЫЛОК; СБРОС PADDING И MARGIN ДЛЯ СПИСКОВ, ТЕКСТА, ЗАГЛАВИЙ*/
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link {
   text-decoration: none;
@@ -116,6 +135,13 @@ address {
 .hero-button:focus {
   background-color: #188ce8;
 }
+/* CЕКЦИИ  */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  outline: 2px dashed teal;
+}
 
 /* ОСОБЕННОСТИ */
 .features-title {
@@ -124,6 +150,8 @@ address {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .features-text {
   font-size: 14px;
@@ -155,6 +183,8 @@ address {
 }
 .team-title {
   font-weight: 500;
+
+  margin-bottom: 10px;
 }
 .team-text {
   color: var(--text-secondary-color);
@@ -184,6 +214,8 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 .portfolio-text {
   font-size: 16px;
