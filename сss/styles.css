@@ -99,6 +99,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding: 10px;
 }
 .nav-link {
   color: var(--text-primary-color);
