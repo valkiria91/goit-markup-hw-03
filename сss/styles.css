@@ -157,6 +157,8 @@ address {
 .hero {
   background-color: var(--theme-dark-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-weight: 900;
@@ -166,7 +168,10 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  width: 696px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
   font-family: var(--text-primary-font);
