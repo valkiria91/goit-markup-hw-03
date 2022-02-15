@@ -185,6 +185,7 @@ address {
   background-color: var(--accent-color);
   padding: 10px 32px;
   min-width: 200px;
+  border: 1px solid transparent;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -300,9 +301,8 @@ address {
   margin-bottom: 50px;
   padding: 6px 22px;
   min-width: 73px;
+  border: 1px solid transparent;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-button-item:not(:last-child) {
   margin-right: 8px;
@@ -312,6 +312,8 @@ address {
 .portfolio-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .portfolio-list {
   display: flex;
