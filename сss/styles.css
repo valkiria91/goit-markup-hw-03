@@ -67,10 +67,10 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  margin-right: 93px;
 }
 .logo-header {
   color: #000000;
+  margin-right: 93px;
 }
 .logo-footer {
   color: var(--primary-white-color);
