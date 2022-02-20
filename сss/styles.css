@@ -136,8 +136,6 @@ img {
 }
 address {
   font-style: normal;
-}
-.adress-list {
   margin-top: 20px;
 }
 .adress-street-item {
@@ -298,6 +296,7 @@ address {
 .button-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .portfolio-button {
   font-family: var(--text-primary-font);
@@ -309,7 +308,6 @@ address {
   cursor: pointer;
   color: var(--text-primary-color);
   background-color: var(--theme-light-color);
-  margin-bottom: 50px;
   padding: 6px 22px;
   min-width: 73px;
   border: 1px solid transparent;
