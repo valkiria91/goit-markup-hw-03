@@ -48,7 +48,18 @@ img {
 .link {
   text-decoration: none;
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* НEADER */
 .header {
   padding-top: 24px;
@@ -67,10 +78,10 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  margin-right: 93px;
 }
 .logo-header {
   color: #000000;
-  margin-right: 93px;
 }
 .logo-footer {
   color: var(--primary-white-color);
@@ -99,7 +110,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 10px;
+  padding: 10px 0;
 }
 .nav-link {
   color: var(--text-primary-color);
@@ -200,9 +211,6 @@ address {
 }
 
 /* ОСОБЕННОСТИ */
-.features {
-  padding-bottom: 0;
-}
 .features-list {
   display: flex;
   align-items: center;
@@ -237,10 +245,13 @@ address {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.work-directions {
+  padding-top: 0;
+}
 .work-directions-list {
   display: flex;
 }
-.work-direction-item {
+.work-directions-item {
   flex-basis: calc((100% - 60px) / 3);
 }
 .work-directions-item:not(:last-child) {
